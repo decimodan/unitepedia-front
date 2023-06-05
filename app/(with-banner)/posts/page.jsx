@@ -1,9 +1,9 @@
-import { ListOfPosts } from "./ListOfPosts.jsx"
+import { ListOfPosts } from './ListOfPosts.jsx'
 
-export default async function PostsPage ({params}) {    
-    return(
-        <section>
-            <ListOfPosts />
-        </section>
-    )
+export default async function PostsPage ({ params }) {
+  return (
+    <section>
+      <ListOfPosts />
+    </section>
+  )
 }
