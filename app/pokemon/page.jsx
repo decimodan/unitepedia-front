@@ -2,7 +2,7 @@ import { ListOfPokemon } from './ListOfPokemon'
 
 export default async function PokemonPage ({ params }) {
   return (
-    <section>
+    <section className='pokemonList'>
       <ListOfPokemon />
     </section>
   )

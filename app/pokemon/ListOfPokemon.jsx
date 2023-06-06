@@ -16,9 +16,9 @@ export async function ListOfPokemon () {
   // console.log(listOfPokemon)
 
   return listOfPokemon.map(pokemon => (
-    <article key={pokemon.name}>
+    <article className='list' key={pokemon.name}>
       <Link href='/pokemon/[id]' as={`/pokemon/${pokemon.name}`}>
-        <Image width='50' height='50' alt={pokemon.name} src={`https://avatars.dicebear.com/api/pixel-art-neutral/${pokemon.name}.svg`} />
+        <Image width='150' height='150' className='pokemonThumbnail' alt={pokemon.thumbnail} src={pokemon.thumbnail} />
         <p>{pokemon.name}</p>
       </Link>
     </article>

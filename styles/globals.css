@@ -1,6 +1,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
   Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -15,9 +16,7 @@ a {
 }
 
 body{
-  padding: 100px;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,6 +25,54 @@ body{
   }
   body {
     color: white;
-    background: black;
+    background: #45337b;
   }
+}
+
+.pokemonContainer{
+  height: 80%;
+}
+
+.pokemonList{
+  background: #312457;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  height: 100%;
+}
+
+.pokemonThumbnail{
+  background: #45337b;
+  border: 5px solid transparent;
+  border-radius: 5px;
+  object-fit: cover;
+  transition-duration: 0.3s 0.3s 0.3s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+  transition-property: border, box-shadow, transform;
+}
+
+.list p{
+  color: #c0b5e0;
+  font-family: Roboto-Regular,sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: .875rem;
+  margin: auto;
+  transition-duration: 0.3s 0.3s 0.3s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+  transition-property: border, box-shadow, transform;
+}
+
+.pokemonThumbnail:hover{
+  border-color: #ffa403;
+  transition-duration: 0.3s 0.3s 0.3s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+  transition-property: border, box-shadow, transform;
 }

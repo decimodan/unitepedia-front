@@ -40,7 +40,7 @@ export function Navigation () {
   return (
     <header className={styles.header}>
       <nav>
-        <ul className={styles.navigation}>
+        <ul className={styles.menu}>
           {links.map(({ label, route }) => (
             <li key={route}>
               <Link href={route}>
